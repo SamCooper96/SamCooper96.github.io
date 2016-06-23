@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0
+}
+body {
+	font-family: "微软雅黑", "幼圆";
+	font-size: 14px;
+	color: #666
+}
+a {
+	color: #5C5C5C;
+	text-decoration: none
+}
+li {
+	list-style: none
+}
+#nav {
+	width: 1000px;
+	height: 40px;
+	background: rgba(240,240,240,0.8);
+	margin: 0 auto;
+}
+/*设置鼠标停留超链接时，文字变色加粗*/
+#nav a:hover {
+	color: #5C5C5C;
+	font-weight: bolder
+}
+/*导航一级栏目*/
+#nav ul li {
+	float: left;
+	line-height: 40px;
+	width: 140px;
+	text-align: center;
+	word-spacing:4px
+}
+#nav ul li:hover {
+	background: rgba(168,192,192,0.8)
+}
+#nav ul li ul {
+	display: none
+}
+/*导航(暂未开放)*/
+#nav ul li:hover ul {
+	display: block
+}
+#nav ul li:hover ul li ul {
+	display: none
+}
+#nav ul li ul li:first-child {
+	border-top: d8d8c0 1px solid
+}
+#nav ul li ul li {
+	height: 30px;
+	line-height: 30px;
+	background: rgba(240,240,240,0.8);
+	border-bottom: d8d8c0 1px solid
+}
+#nav ul li ul li:hover {
+	background: rgba(168,192,192,0.8)
+}
+/*导航建造中...*/
+#nav ul li ul li:hover ul {
+	display: block
+}
+#nav ul li ul li {
+	position: relative
+}
+/*相关知识参考第07次课*/
+#nav ul li ul li ul {
+	position: absolute;
+	top: 0px;
+	left: 140px
+}
+#nav ul li ul li ul li {
+	background: rgba(240,240,240,0.8)
+}
+</style>
+</head>
+
+<body>
+<div id="nav">
+  <ul>
+    <li><a href="#">首 页</a></li>
+    <li><a href="#">音 乐</a>
+      <ul>
+        <li><a href="#">专辑推荐</a>
+          <ul>
+            <li><a href="#">新专辑</a></li>
+            <li><a href="#">经典专辑</a></li>
+          </ul>
+        </li>
+        <li><a href="#">歌 单</a>
+          <ul>
+            <li><a href="#">每周歌单</a></li>
+            <li><a href="#">歌单回顾</a></li>
+          </ul>
+        </li>
+        <li><a href="#">喜欢的歌星</a>
+          <ul>
+            <li><a href="#">Ellie Goulding</a></li>
+            <li><a href="#">Adele</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">生 活</a>
+      <ul>
+        <li><a href="#">电 影</a>
+          <ul>
+            <li><a href="#">电影推荐</a> </li>
+            <li><a href="#">电影吐槽</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Ellen Show</a>
+          <ul>
+            <li><a href="http://www.ellentv.com/" target="_blank">官 网</a></li>
+            <li><a href="http://tv.sohu.com/s2015/ellens13/" target="_blank">搜 狐</a></li>
+          </ul>
+        </li>
+        <li><a href="#">(暂未开放)</a>
+          <ul>
+            <li><a href="#">建造中...</a></li>
+            <li><a href="#">建造中...</a></li>
+          </ul>
+        </li>
+        <li><a href="#">(暂未开放)</a>
+          <ul>
+            <li><a href="#">建造中...</a></li>
+            <li><a href="#">建造中...</a></li>
+          </ul>
+        </li>
+        <li><a href="#">(暂未开放)</a>
+          <ul>
+            <li><a href="#">建造中...</a></li>
+            <li><a href="#">建造中...</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">(暂未开放)</a></li>
+    <li><a href="#">(暂未开放)</a></li>
+    <li><a href="#">关于网站</a></li>
+    <li><a href="#">留 言</a></li>
+  </ul>
+  <div style="clear:both"></div>
+</div>
+</body>
+</html>
