@@ -26,7 +26,7 @@ li {
 	list-style: none
 }
 /*导航*/
-#nav {
+nav {
 	width: 100%;
 	height: 40px;
 	background: rgba(240,240,240,0.9);
@@ -34,85 +34,185 @@ li {
 	position: relative
 }
 /*设置鼠标停留超链接时，文字变色加粗*/
-#nav a:hover {
+nav a:hover {
 	color: #5C5C5C;
 	font-weight: bolder
 }
 /*导航一级栏目*/
-#nav ul:first-child {
+nav ul:first-child {
 	padding-left: 13%
 }
-#nav ul li {
+nav ul li {
 	float: left;
 	line-height: 40px;
 	width: 140px;
 	text-align: center;
 	word-spacing: 4px
 }
-#nav ul li:hover {
+nav ul li:hover {
 	background: rgba(168,192,192,0.9)
 }
-#nav ul li ul {
+nav ul li ul {
 	display: none
 }
-/*导航(暂未开放)*/
-#nav ul li:hover ul {
+/*指向一级导航时候，二级导航显示为块级元素*/
+nav ul li:hover ul {
 	display: block
 }
-#nav ul li:hover ul li ul {
+/*指向一级导航时候，三级导航元素不会被显示*/
+nav ul li:hover ul li ul {
 	display: none
 }
 /*导航二级栏目*/
-#nav ul li ul li:first-child {
+nav ul li ul li:first-child {
 	border-top: #d8d8c0 1px solid
 }
-#nav ul li ul li {
+nav ul li ul li {
 	height: 30px;
 	line-height: 30px;
 	background: rgba(240,240,240,0.9);
 	border-bottom: #d8d8c0 1px solid
 }
-#nav ul li ul li:hover {
+nav ul li ul li:hover {
 	background: rgba(168,192,192,0.9)
 }
 /*导航建造中...*/
-#nav ul li ul li:hover ul {
+nav ul li ul li:hover ul {
 	display: block
 }
-#nav ul li ul li {
+nav ul li ul li {
 	position: relative
 }
 /*导航三级目录*/
 /*相关知识参考第07次课*/
-#nav ul li ul li ul {
+nav ul li ul li ul {
 	position: absolute;
 	top: 0px;
 	left: 140px
 }
-#nav ul li ul li ul li {
+nav ul li ul li ul li {
 	background: rgba(240,240,240,0.9)
+}
+/*九宫格动画*/
+.welcome {
+	position:relative;
+	margin: 130px auto;
+	width: 33.33%;
+	height: 33.33%;
+}
+/*
+ *  Usage:
+ *
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+ *
+ */
+.sk-cube-grid {
+	width: 150px;
+	height: 150px;
+	margin: 80px auto;/*
+   * Spinner positions
+   * 1 2 3
+   * 4 5 6
+   * 7 8 9
+   */ }
+.sk-cube-grid .sk-cube {
+	width: 33.33%;
+	height: 33.33%;
+	background-color: rgba(240,240,240,0.9);
+	float: left;
+	-webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+	animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+	-webkit-animation-delay: 0.0s;
+	animation-delay: 0.0s;
+}
+.sk-cube-grid .sk-cube8 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+ @-webkit-keyframes sk-cubeGridScaleDelay {
+ 0%, 70%, 100% {
+ -webkit-transform: scale3D(1, 1, 1);
+ transform: scale3D(1, 1, 1);
+}
+ 35% {
+ -webkit-transform: scale3D(0, 0, 1);
+ transform: scale3D(0, 0, 1);
+}
+}
+ @keyframes sk-cubeGridScaleDelay {
+ 0%, 70%, 100% {
+ -webkit-transform: scale3D(1, 1, 1);
+ transform: scale3D(1, 1, 1);
+}
+ 35% {
+ -webkit-transform: scale3D(0, 0, 1);
+ transform: scale3D(0, 0, 1);
+}
 }
 /*“点击进入”按钮*/
 #home {
 	position: relative;
+	top:-230px;
 	text-align:center;
-	margin: 210px auto;
+	margin: 300px auto;
 	z-index: 99;
 }
+/*按钮样式*/
 #home a {
 	color: white;
 	text-decoration: none;
 	background-color: rgba(168,192,192,0.75);
-	padding: 15px 80px;
+	padding: 10px 60px;
 	font-size: 24px;
 	letter-spacing: 6px;
-	border: 1px solid rgba(168,192,192,0.9);
+	border: 2px solid rgba(168,192,192,0.9);
 	-moz-transition: background-color 1s, border 1s;
 	-webkit-transition: background-color 1s, border 1s;
 	transition: background-color 1s, border 1s;
 }
+/*指向按钮时的样式：背景色变为透明*/
 #home a:hover {
 	background-color: transparent;
-	border: 1px solid #ffffff;
+	border: 2px solid #ffffff;
 	box-sizing: content-box;
 }
