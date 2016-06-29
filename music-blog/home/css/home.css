@@ -12,11 +12,14 @@ body {
 	width: 100%;   /* height: 600px;*/
 	margin: 0px auto;
 	background-color: #fff;
-	position: absolute;
+	position:absolute;
 }
-#wrap img {
+#wrap .bg{
 	width: 100%;
-	position: absolute;
+	position: fixed;
+}
+#wrap img{
+	position:absolute;
 }
 a {
 	color: #5C5C5C;
@@ -28,10 +31,10 @@ li {
 /*网站LOGO*/
 #logo {
 	left: 12%;
+	top: 0;
 	margin: 5px;
-	z-index:99;
+	z-index: 99;
 	position: fixed;
-	
 }
 #logo img {
 	width: 30px;
@@ -45,9 +48,8 @@ nav {
 	margin: 0 auto;
 	position: fixed;
 	top: 0;
-	z-index:98
+	z-index: 98
 }
-
 /*设置鼠标停留超链接时，文字变色加粗*/
 nav a:hover {
 	color: #5C5C5C;
@@ -91,7 +93,6 @@ nav ul li ul li {
 nav ul li ul li:hover {
 	background: rgba(168,192,192,0.8)
 }
-/*导航建造中...*/
 nav ul li ul li:hover ul {
 	display: block
 }
@@ -107,4 +108,126 @@ nav ul li ul li ul {
 }
 nav ul li ul li ul li {
 	background: rgba(240,240,240,0.9)
+}
+/*网页内容区*/
+#wrap #content {
+	position: relative;
+	background: rgba(255,255,255,0.80);
+	width: 1024px;
+	height: 580px;
+	margin: 60px auto;
+}
+/*横幅css*/
+#wrap #content #banner {
+	width: 1000px;
+	height: 290px;
+	position: relative;
+	margin: 0 auto;
+	top: 10px;
+}
+#pic {
+	position: relative
+}
+/*不知道为什么，删除这一段可以在浏览器中显示滚动图片，但切换兼容模式或者ie内核就不能显示。
+#pic ul li {
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+#pic .piccur {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}*/
+#btn {
+	position: absolute;
+	width: 300px;
+	right: 50%;
+	bottom: 8px;
+}
+#btn ul {
+	float: right
+}
+#btn li {
+	float: left;
+	color: #FFF;
+	height: 24px;
+	width: 24px;
+	text-align: center;
+	background: #f0f0f0;
+	font-size: 12px;
+	color: #5C5C5C;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 8px;
+	line-height: 24px;
+	cursor: pointer;
+}
+#btn .btncur {
+	background: #a8c0c0
+}
+/*栏目1（单曲推荐）*/
+#line1 {
+	width: 1000px;
+	margin: 0 auto;
+}
+#line1 h2 {
+	font-size: 16px;
+	color:#5C5C5C;
+	margin-left:20px;
+	position:relative;
+	top: 45px;
+}
+#line1 a {
+	text-decoration: none;
+	color: #444444;
+}
+#line1 ul {
+	width: 1000px;
+	margin: 50px auto;
+}
+#line1 li {
+	width: 180px;
+	float: left;
+	list-style: none;
+	margin-left: 15px
+}
+#line1 img {
+	width: 170px;
+	height: 170px;
+	border: 1px solid #ccc;
+	padding: 3px;
+	position: absolute
+}
+#line1 p {
+	width: 170px;
+	height: 36px;
+	line-height: 20px;
+	background: rgba(255,255,255,0.90);
+	marigin-top: -24px;
+	padding: 3px;
+	position: relative;
+	top: 135px;
+}
+#line1 span {
+	float: right;
+	font-size: 12px;
+}
+#line1 span a {
+	color: #FF383C
+}
+/*尾部声明*/
+footer{
+	width: 1024px;
+	margin: 0 auto;
+	background-color: rgba(240,240,240,0.9);
+	color: #4F4F4F;
+	height: 50px;
+	position: relative;
+	top: 670px;
+	
+}
+footer p{
+	text-align: center;
+	line-height: 25px;
+	font-size: 14px;
+
 }

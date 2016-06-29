@@ -16,7 +16,7 @@ body {
 }
 #wrap img {
 	width: 100%;
-	position: absolute;
+	position: fixed;
 }
 a {
 	color: #5C5C5C;

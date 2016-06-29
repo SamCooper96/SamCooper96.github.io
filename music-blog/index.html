@@ -5,31 +5,29 @@
 <title>Sam的博客</title>
 <link href="css/index.css" rel="stylesheet"/>
 </head>
-<body>
+<body onload="detectBrowser()">
 <div id="wrap"><img src="images/hello1.jpeg"  alt="">
-
-  <div id="logo"><img src="images/logo.png" alt="Sam's blog"></div>
+  <div id="logo"><a href="index.html"><img src="home/images/logo.png" alt="Sam's blog"></a></div>
   <nav>
     <ul>
-      <li><a href="home/home.html">首 页</a></li>
+      <li><a href="home.html">首 页</a></li>
       <li><a href="#">音 乐</a>
         <ul>
-          <li><a href="#">专辑推荐</a>
+          <li><a href="#">单曲推荐</a>
             <ul>
-              <li><a href="#">新专辑</a></li>
-              <li><a href="#">经典专辑</a></li>
+              <li><a href="http://mp.weixin.qq.com/s?__biz=MzAwODc4Mzg5MA==&mid=2653016832&idx=1&sn=4e703eecfe138c2e7718d9d453600b40&scene=4#wechat_redirect" target="_blank">新歌</a></li>
+              <li><a href="#">经典歌曲</a></li>
             </ul>
           </li>
           <li><a href="#">歌 单</a>
             <ul>
-              <li><a href="#">每周歌单</a></li>
-              <li><a href="#">歌单回顾</a></li>
+              <li><a href="http://mp.weixin.qq.com/s?__biz=MzAwODc4Mzg5MA==&mid=2653016837&idx=1&sn=05a2f36961e76219db7cd9d2287efb58&scene=0#wechat_redirect" target="_blank">每周歌单</a></li>
             </ul>
           </li>
           <li><a href="#">喜欢的歌星</a>
             <ul>
-              <li><a href="#">Ellie Goulding</a></li>
-              <li><a href="#">Adele</a></li>
+              <li><a href="http://mp.weixin.qq.com/s?__biz=MzAwODc4Mzg5MA==&mid=404010960&idx=1&sn=6bd8ca073c780a605a215445a0dc5503&scene=4#wechat_redirect" target="_blank">Ellie Goulding</a></li>
+              
             </ul>
           </li>
         </ul>
@@ -38,8 +36,8 @@
         <ul>
           <li><a href="#">电 影</a>
             <ul>
+              <li><a href="http://www.ttmeiju.com/meiju/Movie.html" target="_blank">电影资源</a></li>
               <li><a href="#">电影推荐</a></li>
-              <li><a href="#">电影资源</a></li>
               <li><a href="#">电影吐槽</a></li>
             </ul>
           </li>
@@ -70,9 +68,9 @@
         </ul>
       </li>
       <li><a href="#">(暂未开放)</a></li>
-      <li><a href="#">(暂未开放)</a></li>
-      <li><a href="#">关于网站</a></li>
-      <li><a href="#">留 言</a></li>
+      <li><a href="register.html">注册</a></li>
+      <li><a href="about.html">关于网站</a></li>
+      <li><a href="comment.html">留 言</a></li>
     </ul>
     <div style="clear:both"></div>
   </nav>
@@ -88,9 +86,10 @@
     <div class="sk-cube sk-cube9"></div>
     <div style="clear:both"></div>
   </div>
-  <div id="home"><a href="home/home.html">点击进入</a>
+  <div id="home"><a href="home.html">点击进入</a>
     <div style="clear:both"></div>
   </div>
 </div>
+<script src="js/index.js"></script>
 </body>
 </html>
